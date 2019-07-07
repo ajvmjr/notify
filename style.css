@@ -18,6 +18,8 @@ nav{
 
 header{
     background-image: url(image/banner.png);
+    display: flex;
+    justify-content: space-evenly;
     grid-area: 'header';
 }   
 
@@ -27,7 +29,6 @@ main{
     display: flex;
     grid-area: 'main';
     justify-content: space-evenly;
-    font-family: sans-serif;
 }
 
 section{
@@ -43,6 +44,76 @@ article{
 footer{
     background-color: yellow;
     grid-area: 'footer';
+}
+
+.divsMainHeader{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+
+h1{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 40pt;
+    font-weight: 5;
+}
+
+h1 span{
+    color: #2cbf60;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.divHeaderLeft{
+    color: white;
+    height: 450px;
+    text-align: justify;
+    font-size: 17pt;
+}
+
+.divHeaderRight{
+    height: 500px;
+}
+
+.divIconesHeader{
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    height: 50px;
+    width: 50px; 
+}
+
+.divIcon{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.divImg{
+    height: 50%;
+    width: 50%;
+}
+
+.icon{
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    opacity: 0.4;
+    width: 50px;
+}
+
+.icon:hover{
+    background-color: #2cbf60;
+    opacity: 1;
 }
 
 .divsRedondas{
@@ -75,6 +146,7 @@ footer{
 main h4{
     font-size: 16pt;
     font-weight: normal;
+    font-family: 'Roboto', sans-serif;
 }
 
 main p{
@@ -82,4 +154,5 @@ main p{
     font-size: 11pt;
     font-weight: normal;
     line-height: 23px;
+    font-family: 'Roboto', sans-serif;
 }
