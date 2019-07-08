@@ -49,6 +49,7 @@ section{
 
 .button{
     color: white;
+    cursor: pointer;
     background-color: #1db954;
     border: #1db954 solid;
     border-radius: 0 15px 15px 0px;
@@ -77,11 +78,14 @@ section{
     width: 40%;
 }
 
-.divSectionRight img{
+.video{
+    align-items: center;
+    display: flex;
+    height: 400px;
+}
+
+.divSectionRight iframe{
     border-radius: 10px 10px 10px 10px;
-    height: 250px;
-    padding-top: 85px;
-    width: 500px;
 }
 
 section div h4{
