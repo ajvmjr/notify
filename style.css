@@ -32,11 +32,35 @@ main{
 }
 
 section{
+    display: flex;
     background-color: #dad1d1;
+    grid-area: 'section';
+    justify-content: center;
+    width: 100vw;
+}
+
+.email{
+    border: white solid;
+    border-radius: 15px 0 0 15px;
+    height: 38px;
+    padding: 2px 20px;
+    width: 250px;
+}
+
+.button{
+    color: white;
+    background-color: #1db954;
+    border: #1db954 solid;
+    border-radius: 0 15px 15px 0px;
+    height: 49px;
+    font-size: 12pt;
+    width: 120px;
+}
+
+.divSectionMain{
     display: flex;
     justify-content: space-evenly;
-    grid-area: 'section';
-    width: 100%;
+    width: 90%;
 }
 
 .divSectionLeft{
@@ -49,8 +73,15 @@ section{
 }
 
 .divSectionRight{
-    height: 50%;
+    height: 400px;
     width: 40%;
+}
+
+.divSectionRight img{
+    border-radius: 10px 10px 10px 10px;
+    height: 250px;
+    padding-top: 85px;
+    width: 500px;
 }
 
 section div h4{
@@ -114,18 +145,45 @@ article h4{
 }
 
 .pessoas{
+    background-color: #2cbf60;
+    cursor: pointer;
     display: flex;
+    height: 50px;
     justify-content: space-evenly;
-    width: 95%;
+    width: 81%;
 }
 
 .divPessoasIcon{
-    height: 15px;
+    height: 100%;
+    width: 100%;
 }
 
 .divPessoasIcon:hover{
-    background-color: #2cbf60;
     opacity: 0.5;
+    cursor: pointer;
+}
+
+.socialMedia{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iconsSocialMedia{
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+    
+}
+
+.iconsSocialMedia:hover{
+    background-color: #2cbf60;
+    cursor: pointer;
+    opacity: 1;
 }
 
 footer{
@@ -215,6 +273,7 @@ p{
 
 .icon:hover{
     background-color: #2cbf60;
+    cursor: pointer;
     opacity: 1;
 }
 
