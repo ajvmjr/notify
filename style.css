@@ -6,7 +6,7 @@ body{
                         'section' 'section' 'section'
                         'article' 'article' 'article'
                         'footer' 'footer' 'footer';
-    grid-template-rows: 1vh 70vh 40vh 40vh 30vh 30vh;
+    grid-template-rows: 1vh 70vh 40vh 50vh 30vh 30vh;
     margin: 0;
     height: 100%;
 }
@@ -32,8 +32,42 @@ main{
 }
 
 section{
-    background-color: #bdbdbd ;
+    background-color: #dad1d1 ;
+    display: flex;
+    justify-content: space-evenly;
     grid-area: 'section';
+    width: 100%;
+}
+
+.divSectionLeft{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: end;
+    padding-top: 50px;
+    width: 40%;
+}
+
+.divSectionRight{
+    height: 50%;
+    width: 40%;
+}
+
+
+
+section div h4{
+    font-size: 15pt;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    height: 5%;
+}
+
+section div p{
+    color: gray;
+    font-size: 11pt;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    line-height: 23px;
 }
 
 article{
@@ -53,7 +87,6 @@ footer{
     justify-content: flex-end;
     width: 30%;
 }
-
 
 h1{
     color: white;
