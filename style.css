@@ -6,7 +6,7 @@ body{
                         'section' 'section' 'section'
                         'article' 'article' 'article'
                         'footer' 'footer' 'footer';
-    grid-template-rows: 1vh 70vh 40vh 50vh 30vh 30vh;
+    grid-template-rows: 1vh 70vh 35vh 50vh 60vh 20vh;
     margin: 0;
     height: 100%;
 }
@@ -32,7 +32,7 @@ main{
 }
 
 section{
-    background-color: #dad1d1 ;
+    background-color: #dad1d1;
     display: flex;
     justify-content: space-evenly;
     grid-area: 'section';
@@ -53,8 +53,6 @@ section{
     width: 40%;
 }
 
-
-
 section div h4{
     font-size: 15pt;
     font-weight: normal;
@@ -71,13 +69,84 @@ section div p{
 }
 
 article{
-    background-color: red;
+    background-color: #E3E3E3;
+    display: flex;
     grid-area: 'article';
+    justify-content: center;
+}
+
+article h4{
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.articleH4{
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.articleP{
+    color: gray;
+    font-size: 11pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+.articlePItalic{
+    color: gray;
+    font-size: 12pt;
+    font-style: italic;
+    line-height: 30px;
+    text-align: center;
+}
+
+.articleDivP{
+    width: 50%;
+}
+
+.articleDivMain{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.pessoas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+}
+
+.divPessoasIcon{
+    height: 15px;
+}
+
+.divPessoasIcon:hover{
+    background-color: #2cbf60;
+    opacity: 0.5;
 }
 
 footer{
-    background-color: yellow;
+    align-items: center;
+    background-color: #dad1d1;
+    display: flex;
     grid-area: 'footer';
+    justify-content: center;
+}
+
+.footerDiv{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+}
+
+footer a{
+    color: gray;
+    font-size: 12pt;
+    text-decoration: none;
 }
 
 .divsMainHeader{
